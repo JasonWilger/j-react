@@ -1,15 +1,14 @@
 import React from 'react';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 // pages
 import HomePage from './views/home';
-import ProductPage from './views/productPage';
 import CartPage from './views/cart';
 
 // components
 import NavBar from './components/navBar';
+
 
 
 function App() {
@@ -21,10 +20,7 @@ function App() {
           <Route exact path="/">
             <HomePage />
           </Route>
-          <Route exact path="/productPage">
-            <ProductPage />
-          </Route>
-          <Route exact path="/cartPage">
+          <Route exact path="/cart">
             <CartPage />
           </Route>
           <Route path="*">

@@ -1,0 +1,17 @@
+.cartBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.emptyCart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.emptyImg {
+    height: auto;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
