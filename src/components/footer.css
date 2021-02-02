@@ -1,0 +1,36 @@
+.footerBody {
+    background-color: #F1FFE7;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.footTitle {
+    display: flex;
+    justify-content: center;
+    padding: 1.5%;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.jLogo {
+    width: 64px;
+    height: 64px;
+}
+
+.accordBody {
+    background-color: #F1FFE7;
+}
+
+.toggleTitle {
+    display: flex;
+    justify-content: center;
+}

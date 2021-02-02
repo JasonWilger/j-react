@@ -3,10 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import Reducer from './components/reducers/Reducers'
-
-const store = createStore(Reducer);
+import store from './store';
 
 
 ReactDOM.render(
@@ -21,3 +18,8 @@ ReactDOM.render(
 );
 
 window.store = store;
+// window.removeProduct = removeProduct;
+// window.subtractQuantity = subtractQuantity;
+// window.addQuantity = addQuantity;
+
+

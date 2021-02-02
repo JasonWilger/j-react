@@ -8,6 +8,7 @@ import CartPage from './views/cart';
 
 // components
 import NavBar from './components/navBar';
+import Footer from './components/footer';
 
 
 
@@ -17,17 +18,14 @@ function App() {
       <NavBar />
       <main>
         <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route exact path="/cart">
-            <CartPage />
-          </Route>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/cart" component={CartPage} />
           <Route path="*">
             <Redirect to='/' />
           </Route>
         </Switch>
       </main>
+      <Footer />
     </Router>
   );
 }

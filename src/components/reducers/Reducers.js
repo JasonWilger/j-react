@@ -124,7 +124,7 @@ const initState = {
         },
         {
             id: 13,
-            title:'Smokey Mountain Playing Cards',
+            title:'Mountain Playing Cards',
             type: "Novelty",
             desc: "Condition: new",
             price: 3,
@@ -235,14 +235,14 @@ const Reducer = (state = initState, action) => {  // CHANGE TO SWITCH CASES
           return {
               ...state,
               addedProducts: [...state.addedProducts, addedProduct],
-              total : newTotal
+              total: newTotal
           }
           
       }
 
   }
 
-  if(action.type === REMOVE_PRODUCT){
+  if(action.type === REMOVE_PRODUCT) {
     let productToRemove = state.addedProducts.find(product => action.id === product.id)
     let new_products = state.addedProducts.filter(product => action.id !== product.id)
     
@@ -255,8 +255,8 @@ const Reducer = (state = initState, action) => {  // CHANGE TO SWITCH CASES
         total: newTotal
     }
 }
-    //INSIDE CART COMPONENT
-    if(action.type === ADD_QUANTITY){
+    // FOR CART
+    if(action.type === ADD_QUANTITY) {
         let addedProduct = state.products.find(product => product.id === action.id)
         addedProduct.quantity += 1 
         let newTotal = state.total + addedProduct.price
@@ -265,11 +265,11 @@ const Reducer = (state = initState, action) => {  // CHANGE TO SWITCH CASES
             total: newTotal
         }
     }
-    if(action.type === SUB_QUANTITY){  
+    if(action.type === SUB_QUANTITY) {  
         let addedProduct = state.products.find(product => product.id === action.id) 
 
         //if the qt == 0 then it should be removed
-        if(addedProduct.quantity === 1){
+        if(addedProduct.quantity === 1) {
             let new_products = state.addedProducts.filter(product => product.id !== action.id)
             let newTotal = state.total - addedProduct.price
             return {

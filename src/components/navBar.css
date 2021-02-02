@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&family=Sacramento&display=swap');
+.navBar {
+    background-color: #F1FFE7;
+}
+.logo {
+    font-family: 'Sacramento', cursive;
+    margin-left: 4%;
+    font-size: 50px;
+}
+
+.homeLink {
+    color: red;
+    margin-left: -30%;
+    margin-right: 10%;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.cartLink {
+    color: red;
+}
