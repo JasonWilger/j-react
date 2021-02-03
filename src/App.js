@@ -9,6 +9,7 @@ import CartPage from './views/cart';
 // components
 import NavBar from './components/navBar';
 import Footer from './components/footer';
+import Order from './views/order';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/cart" component={CartPage} />
+          <Route exact path="/order" component={Order} />
           <Route path="*">
             <Redirect to='/' />
           </Route>

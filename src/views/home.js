@@ -57,7 +57,7 @@ const HomePage = (props) => {
 const mapStateToProps = (state) => {
 
     return {
-      products: state.products
+      products: state.products,
     }
 };
 

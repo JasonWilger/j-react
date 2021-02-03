@@ -54,19 +54,23 @@ h1 {
     width: 50vw;
     border-radius: 5%;
     box-shadow: red;
+    margin-top: 5%;
 }
 
 .totalSection {
     display: flex;
     justify-content: flex-end;
-    margin-right: 10%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .manageCart {
     margin-left: -5%;
 }
 
-.totalSection {
+.total {
+    padding-left: 1%;
     color: #F1FFE7;
-
+    font-size: 200%;
 }

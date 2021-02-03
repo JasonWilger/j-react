@@ -224,7 +224,7 @@ const Reducer = (state = initState, action) => {  // CHANGE TO SWITCH CASES
           addedProduct.quantity += 1 
            return {
               ...state,
-               total: state.total + addedProduct.price 
+               total: state.total + addedProduct.price
                 }
       } else {
 

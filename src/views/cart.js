@@ -1,7 +1,8 @@
 import React from 'react';
 import '../views/cart.css';
-import {Card, Button} from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { removeProduct,addQuantity,subtractQuantity } from '../components/actions/cartActions'
 
 
@@ -88,10 +89,12 @@ const CartPage = (props) => {
                     {addedProducts}
                 </div>
                 <div className="totalSection">
-                <p>Your total: ${props.total}</p>
-                <Button variant="danger" size="lg">
-                    Checkout
-                </Button>
+                    <Link to="/order">
+                    <Button variant="danger" size="lg">
+                        Checkout
+                    </Button>
+                    </Link>
+                <div className="total">Total: ${props.total}</div>
                 </div>
             </div>
 

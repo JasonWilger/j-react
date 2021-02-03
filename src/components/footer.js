@@ -1,8 +1,6 @@
 import './footer.css';
 import jLogo from '../components/j-logo.png';
-import Accordion from 'react-bootstrap/Accordion'
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
+
 
 
 const Footer = () => {
@@ -13,20 +11,6 @@ const Footer = () => {
             <div className="footerContent">
                 <div className="footTitle">
                     this is the footer
-                {/* <Accordion>
-                    <Card className="accordBody">
-                        <Card.Header>
-                        <Accordion.Toggle className="toggleTitle" as={Button} variant="" eventKey="0">
-                            Contact
-                        </Accordion.Toggle>
-                        </Card.Header>
-                        <Accordion.Collapse eventKey="0">
-                        <Card.Body className="toggleBody">
-                            hgfdhgfdhgfdhgfdhgfdhgfdhgfdhgfdhf
-                        </Card.Body>
-                        </Accordion.Collapse>
-                    </Card>
-                </Accordion> */}
                 </div>
                 <div className="social">
                     <div>
