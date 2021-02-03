@@ -1,9 +1,16 @@
 import './order.css';
-import Form from 'react-bootstrap/Form'
-import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form';
+import Col from 'react-bootstrap/Col';
+import StripeCheckout from 'react-stripe-checkout'
+import { Button } from 'react-bootstrap';
+
 
 const Order = () => {
+
+
+    const handleToken = (token) => {
+        console.log(token);
+    }
 
     return (
         <div className="orderPage">
@@ -12,19 +19,7 @@ const Order = () => {
             </div>
             <div>
             <Form className="Form">
-            <div className="contactTitle">Contact</div>
-                <Form.Row>
-                    <Form.Group as={Col} controlId="formGridEmail">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
-                    </Form.Group>
-                    
-                    <Form.Group as={Col} controlId="formGridPassword">
-                    <Form.Label>Phone Number</Form.Label>
-                    <Form.Control type="phone" placeholder="(000) 000-0000" />
-                    </Form.Group>
-                </Form.Row>
-                    <div className="shippingTitle">Shipping Address</div>
+                <div className="shippingTitle">Shipping Address</div>
                 <Form.Group controlId="formGridAddress1">
                     <Form.Label>Address</Form.Label>
                     <Form.Control placeholder="1234 Main St" />
@@ -54,11 +49,14 @@ const Order = () => {
                     <Form.Control />
                     </Form.Group>
                 </Form.Row>
-
-                <Button variant="danger" type="submit">
-                    Next 
-                </Button>
                 </Form>
+                    <div className="checkout">
+                    <StripeCheckout 
+                    stripekey="pk_test_51IGooFKfiTBrtm2SOr0zoL0VcyeuINPL7rVK
+                                HVie86sgAjpTvRWTcn2bjhwxBavwwfP4V2AJ7UzyryyTrGF5XGz3009zbwquXz" 
+                    token={handleToken}
+                    />
+                </div>
             </div>
         </div>
 
