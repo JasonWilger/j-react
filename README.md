@@ -17,5 +17,5 @@ Feel free to take a look [here](https://re-fresh.netlify.app/) !
 ## Links
 - Repository: https://github.com/JasonWilger/j-react
 - Issue tracker: https://github.com/JasonWilger/j-react/issues
-  - In case of sensitive bugs like security vulnerabilities, please contact [me](jkw500@gmail.com) directly instead of using issue tracker. I value your effort
+  - In case of sensitive bugs like security vulnerabilities, please contact [me](mailto:jkw500@gmail.com) directly instead of using issue tracker. I value your effort
     to improve the security and privacy of this project!
