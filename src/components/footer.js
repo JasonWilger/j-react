@@ -1,5 +1,5 @@
 import './footer.css';
-import jLogo from '../components/j-logo.png';
+import jLogo from '../j-logo.png';
 
 
 
