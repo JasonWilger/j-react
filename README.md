@@ -1,4 +1,4 @@
-![Logo of the project](insert logo)
+![Logo of the project](https://github.com/JasonWilger/j-react/blob/master/refreshlogo.png)
 
 # re-Fresh
 > re-Fresh is a front-end [React](https://reactjs.org/) web application that demonstrates the basic functions and features of an ecommerce site.
