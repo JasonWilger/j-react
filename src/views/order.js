@@ -2,7 +2,6 @@ import './order.css';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import StripeCheckout from 'react-stripe-checkout'
-import { Button } from 'react-bootstrap';
 
 
 const Order = () => {
