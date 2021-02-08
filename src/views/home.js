@@ -9,7 +9,6 @@ const HomePage = (props) => {
 
     const handleClick = (id) => {
         props.addToCart(id); 
-        console.log(id);
     }
         let productList = props.products.map(product => {
 

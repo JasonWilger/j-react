@@ -10,6 +10,7 @@ import CartPage from './views/cart';
 import NavBar from './components/navBar';
 import Footer from './components/footer';
 import Order from './views/order';
+import Payment from './components/payment';
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/cart" component={CartPage} />
           <Route exact path="/order" component={Order} />
+          <Route exact path="/payments" component={Payment} />
           <Route path="*">
             <Redirect to='/' />
           </Route>

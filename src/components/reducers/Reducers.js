@@ -20,7 +20,7 @@ import pant1 from './img/pant1.jpg';
 import pant2 from './img/pant2.jpg';
 import pant3 from './img/pant3.jpg';
 import pant4 from './img/pant4.jpg';
-import { ADD_TO_CART, REMOVE_PRODUCT, SUB_QUANTITY, ADD_QUANTITY} from '../actions/Actions'
+import { ADD_TO_CART, REMOVE_PRODUCT, SUB_QUANTITY, ADD_QUANTITY, ADD_SHIPPING, SUB_SHIPPING} from '../actions/Actions'
 
 
 const initState = {
@@ -286,6 +286,20 @@ const Reducer = (state = initState, action) => {  // CHANGE TO SWITCH CASES
             }
         }
 
+    }
+
+    if(action.type === ADD_SHIPPING){
+        return{
+        ...state,
+        total: state.total + 6
+        }
+    }
+
+    if(action.type === SUB_SHIPPING){
+        return{
+        ...state,
+        total: state.total - 6
+        }
     }
 
     return state

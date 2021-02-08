@@ -1,4 +1,4 @@
-import { ADD_TO_CART, REMOVE_PRODUCT, SUB_QUANTITY, ADD_QUANTITY} from './Actions'
+import { ADD_TO_CART, REMOVE_PRODUCT, SUB_QUANTITY, ADD_QUANTITY, ADD_SHIPPING, SUB_SHIPPING} from './Actions'
 
 
 export const addToCart = (id) => {
@@ -15,7 +15,7 @@ export const removeProduct = (id) => {
     }
 }
 
-export const subtractQuantity = (id) => {
+export const subQuantity = (id) => {
     return {
         type: SUB_QUANTITY,
         id: id
@@ -25,6 +25,20 @@ export const subtractQuantity = (id) => {
 export const addQuantity = (id) => {
     return {
         type: ADD_QUANTITY,
+        id: id
+    }
+}
+
+export const addShipping = (id) => {
+    return {
+        type: ADD_SHIPPING,
+        id: id
+    }
+}
+
+export const subShipping = (id) => {
+    return {
+        type: SUB_SHIPPING,
         id: id
     }
 }
