@@ -2,7 +2,6 @@ import './footer.css';
 import jLogo from '../j-logo.png';
 
 
-
 const Footer = () => {
 
     return (
@@ -10,7 +9,7 @@ const Footer = () => {
         <div className="footerBody">
             <div className="footerContent">
                 <div className="footTitle">
-                    this is the footer
+                   Stay in touch!
                 </div>
                 <div className="social">
                     <div>

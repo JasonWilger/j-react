@@ -11,6 +11,7 @@ import NavBar from './components/navBar';
 import Footer from './components/footer';
 import Order from './views/order';
 import Payment from './components/payment';
+import Completed from './components/completed';
 
 
 
@@ -24,7 +25,8 @@ function App() {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/cart" component={CartPage} />
           <Route exact path="/order" component={Order} />
-          <Route exact path="/payments" component={Payment} />
+          <Route exact path="/payment" component={Payment} />
+          <Route exact path="/completed" component={Completed} />
           <Route path="*">
             <Redirect to='/' />
           </Route>

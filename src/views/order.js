@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const Order = () => {
 
     return (
-        
+
         <div className="orderPage">
             <div className="orderTitle">
                 Where can we send your order?
@@ -96,7 +96,7 @@ const Order = () => {
                     </Form.Group>
                 </Form.Row>
 
-                <Link to="/recipe"><Button variant="danger">
+                <Link to="/payment"><Button variant="danger">
                     Proceed to Checkout
                 </Button>
 

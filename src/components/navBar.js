@@ -1,9 +1,10 @@
 import './navBar.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
-import addedProducts from './reducers/Reducers';
+import { connect } from 'react-redux';
 
-const NavBar = () => {
+
+const NavBar = (props) => {
 
   return (
     <Navbar className="navBar" expand="lg">
@@ -18,7 +19,7 @@ const NavBar = () => {
           11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5
           12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1
           0-2z"/>
-          </svg>({addedProducts.length})
+          </svg>({props.products.length})
           </Link>
           </Nav>
         </Navbar.Collapse>
@@ -28,4 +29,10 @@ const NavBar = () => {
   
 }
 
-export default NavBar;
+const mapStateToProps = (state) => {
+  return {
+      products: state.addedProducts,
+  }
+}
+
+export default connect(mapStateToProps)(NavBar);

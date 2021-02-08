@@ -230,12 +230,13 @@ const Reducer = (state = initState, action) => {  // CHANGE TO SWITCH CASES
 
           addedProduct.quantity = 1;
           //calculating the total
-          let newTotal = state.total + addedProduct.price 
+          let newTotal = state.total + addedProduct.price
+          let updatedTotal = Math.floor(newTotal * 100) / 100
           
           return {
               ...state,
               addedProducts: [...state.addedProducts, addedProduct],
-              total: newTotal
+              total: updatedTotal
           }
           
       }
