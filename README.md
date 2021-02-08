@@ -14,7 +14,6 @@ Feel free to take a look [here](https://re-fresh.netlify.app/) !
 * [React](https://reactjs.org/)
 * [React Redux](https://react-redux.js.org/)
 * [React Bootsrtap](https://react-bootstrap.github.io/)
-* [Stripe](https://stripe.com/)
 
 ## Links
 - Repository: https://github.com/JasonWilger/j-react
